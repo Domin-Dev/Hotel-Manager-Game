@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 70
+  m_ScrollSensitivity: 40
   m_Viewport: {fileID: 725473254}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1516032595}
@@ -1087,6 +1087,7 @@ GameObject:
   - component: {fileID: 440102624}
   - component: {fileID: 440102623}
   - component: {fileID: 440102622}
+  - component: {fileID: 440102625}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1179,6 +1180,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &440102625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440102620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &449348861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4073,7 +4087,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 233133961}
   m_HandleRect: {fileID: 233133960}
   m_Direction: 2
-  m_Value: 1.0000014
+  m_Value: 1.0000017
   m_Size: 0.5886
   m_NumberOfSteps: 0
   m_OnValueChanged:

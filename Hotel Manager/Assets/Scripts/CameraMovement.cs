@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -25,6 +26,14 @@ public class CameraMovement : MonoBehaviour
 
     private void Update()
     {
+        if(mouseIsOverUI())
+        {
+            Debug.Log("git");
+        }
+        else
+        {
+            Debug.Log("oj");
+        }
 
         x = 0;
         y = 0;    
@@ -89,5 +98,9 @@ public class CameraMovement : MonoBehaviour
         return camera.ScreenToWorldPoint(vector3);
     }
         
+    private bool mouseIsOverUI()
+    {
+        return EventSystem.current.IsPointerOverGameObject();
+    }
 
 }
