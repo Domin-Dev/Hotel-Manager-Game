@@ -24,23 +24,26 @@ public class GridManager : MonoBehaviour
     int index;
     private void Update()
     {
-
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            id++;
-        }
         text.transform.position = Input.mousePosition;
 
         if (Input.GetMouseButtonDown(0))
         {
-            Vector3 vector3 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            grid.GetXY(vector3, out int x, out int y);
-            startPosition = new Vector2Int(x, y);
+            if (!CameraMovement.mouseIsOverUI())
+            {
+                text.gameObject.SetActive(true);
+                Vector3 vector3 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                grid.GetXY(vector3, out int x, out int y);
+                startPosition = new Vector2Int(x, y);
+            }
+            else
+            {
+                startPosition = new Vector2Int(-1, -1);
+            }
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            text.text = "";
+            text.gameObject.SetActive(false);
 
             foreach (Vector4 item in list)
             {
@@ -50,23 +53,15 @@ public class GridManager : MonoBehaviour
 
             grid.iconGrid.Clear(list);
             list.Clear();
+            
         }
 
-        if(Input.GetMouseButton(1))
-        {
-            Vector3 vector3 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            grid.GetXY(vector3, out int x, out int y);
-            grid.floorGrid.ChangeSprite(x, y, 3, 0);
-        }
-
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && startPosition != new Vector2Int(-1,-1))
         {
             Vector3 vector3 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             grid.GetXY(vector3, out int x, out int y);
             if (x != endPosition.x || y != endPosition.y)
             {
-
-                
                 grid.iconGrid.Clear(list);
                 list.Clear();
                 endPosition = new Vector2Int(x, y);
@@ -98,8 +93,8 @@ public class GridManager : MonoBehaviour
                     DrawLine(true, endPosition, height, false);
                 }
 
-                grid.iconGrid.ChangeSprites(list,false);
-            }
+                grid.iconGrid.ChangeSprites(list, false);
+            }          
         }
 
     }

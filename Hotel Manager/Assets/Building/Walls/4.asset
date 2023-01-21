@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e923a950508db4585239f261afb22e, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  wallId: 2
+  wallId: 19
   name: Normal Wall
-  Image: {fileID: 6079879154219152320, guid: 264f220331a571044b9c675ec7e88057, type: 3}
+  Image: {fileID: -8273608858029404329, guid: d3c330b1f277f5e47b68cd42b0c8199b, type: 3}
   price: 100

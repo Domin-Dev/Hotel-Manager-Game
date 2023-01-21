@@ -26,24 +26,16 @@ public class CameraMovement : MonoBehaviour
 
     private void Update()
     {
-        if(mouseIsOverUI())
-        {
-            Debug.Log("git");
-        }
-        else
-        {
-            Debug.Log("oj");
-        }
 
         x = 0;
         y = 0;    
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
 
-        if(Input.mouseScrollDelta.y > 0)
+        if(Input.mouseScrollDelta.y > 0 && !mouseIsOverUI())
         {
             camera.orthographicSize = Mathf.Clamp(camera.orthographicSize - 160 * Time.deltaTime, 20, 120);
-        }else if(Input.mouseScrollDelta.y < 0)
+        }else if(Input.mouseScrollDelta.y < 0 && !mouseIsOverUI())
         {
             camera.orthographicSize = Mathf.Clamp(camera.orthographicSize + 160 * Time.deltaTime, 20, 120);
         }
@@ -98,7 +90,7 @@ public class CameraMovement : MonoBehaviour
         return camera.ScreenToWorldPoint(vector3);
     }
         
-    private bool mouseIsOverUI()
+    static public bool mouseIsOverUI()
     {
         return EventSystem.current.IsPointerOverGameObject();
     }

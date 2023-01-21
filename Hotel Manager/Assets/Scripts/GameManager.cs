@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] Material material1;
     [SerializeField] Material material2;
     [SerializeField] public Text text;
+
+    public GridManager gridManager;
     public Grid gameGrid { get; private set; }
     public static GameManager instance { get; private set; }
     private void Awake()
@@ -26,4 +28,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        gridManager = this.GetComponent<GridManager>();
+    }
 }

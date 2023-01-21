@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71e923a950508db4585239f261afb22e, type: 3}
-  m_Name: 10 2
+  m_Name: 23
   m_EditorClassIdentifier: 
-  wallId: 2
+  wallId: 0
   name: Normal Wall
-  Image: {fileID: 2887687357955120637, guid: 264f220331a571044b9c675ec7e88057, type: 3}
+  Image: {fileID: 3162815272857157713, guid: d3c330b1f277f5e47b68cd42b0c8199b, type: 3}
   price: 100

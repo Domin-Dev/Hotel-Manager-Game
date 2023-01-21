@@ -15,7 +15,20 @@ public class UIManager : MonoBehaviour
     {
         foreach(Wall obj in walls)
         {
-            Instantiate(cell, wallsTransform).transform.GetChild(0).GetComponent<Image>().sprite = obj.Image;            
+            GameObject gObject = Instantiate(cell, wallsTransform);
+            gObject.transform.GetChild(1).GetComponent<Image>().sprite = obj.Image;
+            gObject.transform.GetChild(0).GetComponent<Text>().text = obj.name + "\n<color=#20E600> " +obj.price+"</color>";
+            gObject.GetComponent<Button>().onClick.AddListener(() => { 
+                GameManager.instance.gridManager.id = obj.wallId;
+                for (int i = 0; i < wallsTransform.transform.childCount; i++)
+                {
+                    wallsTransform.transform.GetChild(i).GetComponent<Image>().color = new Color32(230, 125, 0,255);
+                    Debug.Log("s");
+                }
+                gObject.GetComponent<Image>().color = Color.white;             
+            });
+            
+            
         }     
     }
 
