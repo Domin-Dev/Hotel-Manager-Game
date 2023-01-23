@@ -1,0 +1,1344 @@
+fileFormatVersion: 2
+guid: 433d76122e8826e4c80c20035dfa6f6a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5154864246085000941
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_0
+  - first:
+      213: 6950124459841618162
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_1
+  - first:
+      213: -3730980732998893813
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_2
+  - first:
+      213: 1094168762182820435
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_3
+  - first:
+      213: 2714096290157913419
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_4
+  - first:
+      213: -357323271341023705
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_5
+  - first:
+      213: -3288658640353009395
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_6
+  - first:
+      213: -554297058372183462
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_7
+  - first:
+      213: -8639895927486765416
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_8
+  - first:
+      213: 2177576181518277688
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_9
+  - first:
+      213: -7169129945596650384
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_10
+  - first:
+      213: -2433119063145049102
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_11
+  - first:
+      213: 7554743408658197540
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_12
+  - first:
+      213: 2029955285749586207
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_13
+  - first:
+      213: -7737338664859642743
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_14
+  - first:
+      213: 3412815993938350371
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_15
+  - first:
+      213: -6560646451785254816
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_16
+  - first:
+      213: 2085478413407300485
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_17
+  - first:
+      213: 3681567107375278080
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_18
+  - first:
+      213: 6770674680287244956
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_19
+  - first:
+      213: -7151186610316571951
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_20
+  - first:
+      213: -4190943535454253960
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_21
+  - first:
+      213: 1870266660650048623
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_22
+  - first:
+      213: -3632214998629783164
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_23
+  - first:
+      213: 6764892959487467946
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_24
+  - first:
+      213: 3076604734459308788
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_25
+  - first:
+      213: 7254352916724677197
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_26
+  - first:
+      213: 6047036548193005190
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_27
+  - first:
+      213: -1225777281720105578
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_28
+  - first:
+      213: 6311278374191596972
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_29
+  - first:
+      213: -3481479045038539660
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_30
+  - first:
+      213: -2186460834105033240
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_31
+  - first:
+      213: 500367680301048956
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_32
+  - first:
+      213: 4163524446624300114
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_33
+  - first:
+      213: -3237740375747415312
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_34
+  - first:
+      213: 517644181413683610
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_35
+  - first:
+      213: 4884533623833689396
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_36
+  - first:
+      213: 4063823951729402399
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_37
+  - first:
+      213: 8185532551688698852
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_38
+  - first:
+      213: -6420637307720953265
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_39
+  - first:
+      213: 7733339110568621654
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_40
+  - first:
+      213: -9179015558486071205
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_41
+  - first:
+      213: 5511377285225100029
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_42
+  - first:
+      213: -8344690993786243941
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_43
+  - first:
+      213: 4080227347335738193
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_44
+  - first:
+      213: 4441829869678430157
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_45
+  - first:
+      213: -6726753944218693742
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_46
+  - first:
+      213: 5303274306937939529
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_47
+  - first:
+      213: 3929677733859657407
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_48
+  - first:
+      213: 3120520511718457298
+    second: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311edb2a74e3678b0800000000000000
+      internalID: -5154864246085000941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f00d957f5dc37060800000000000000
+      internalID: 6950124459841618162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f36c97ac4e83cc0800000000000000
+      internalID: -3730980732998893813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3526c3a21b44f2f00800000000000000
+      internalID: 1094168762182820435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45611d22386aa520800000000000000
+      internalID: 2714096290157913419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72edcbdb0688a0bf0800000000000000
+      internalID: -357323271341023705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_6
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d016d3204665c52d0800000000000000
+      internalID: -3288658640353009395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a9eaf13cdbe48f0800000000000000
+      internalID: -554297058372183462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_8
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896aec91e6ce81880800000000000000
+      internalID: -8639895927486765416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_9
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c9fb2fffd483e10800000000000000
+      internalID: 2177576181518277688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_10
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c98145c42228c90800000000000000
+      internalID: -7169129945596650384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f312017a13db3ed0800000000000000
+      internalID: -2433119063145049102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_12
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cab4a7a17d7d860800000000000000
+      internalID: 7554743408658197540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_13
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19d705c399db2c10800000000000000
+      internalID: 2029955285749586207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_14
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984552e7a737f9490800000000000000
+      internalID: -7737338664859642743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_15
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321977a8012cc5f20800000000000000
+      internalID: 3412815993938350371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_16
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068b968dfc6e3f4a0800000000000000
+      internalID: -6560646451785254816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_17
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b23e1519b11fc10800000000000000
+      internalID: 2085478413407300485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_18
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008add347cd871330800000000000000
+      internalID: 3681567107375278080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_19
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92b048cfb446fd50800000000000000
+      internalID: 6770674680287244956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_20
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da0d81aaa1e1cc90800000000000000
+      internalID: -7151186610316571951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_21
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c878f1f07c6d5c0800000000000000
+      internalID: -4190943535454253960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_22
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c5d476e9584f910800000000000000
+      internalID: 1870266660650048623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_23
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48963daf3b7c79dc0800000000000000
+      internalID: -3632214998629783164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_24
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1aac10e4ab1ed50800000000000000
+      internalID: 6764892959487467946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_25
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa6bb794bb42ba20800000000000000
+      internalID: 3076604734459308788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_26
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a71b4ea83aca460800000000000000
+      internalID: 7254352916724677197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_27
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e29d6b3b36be350800000000000000
+      internalID: 6047036548193005190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_28
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69544558e0a2dfee0800000000000000
+      internalID: -1225777281720105578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_29
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca58b442e3a269750800000000000000
+      internalID: 6311278374191596972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_30
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cf283114d4fafc0800000000000000
+      internalID: -3481479045038539660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_31
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed7ddba47128a1e0800000000000000
+      internalID: -2186460834105033240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_32
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c742e6111c9a1f600800000000000000
+      internalID: 500367680301048956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_33
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c32b6cc6fc7c930800000000000000
+      internalID: 4163524446624300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_34
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2b2a4584c3113d0800000000000000
+      internalID: -3237740375747415312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_35
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91e531f3aa0f2700800000000000000
+      internalID: 517644181413683610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_36
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dfe06937959c340800000000000000
+      internalID: 4884533623833689396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_37
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f122e806a5a956830800000000000000
+      internalID: 4063823951729402399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_38
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb3dc8ac7ad89170800000000000000
+      internalID: 8185532551688698852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_39
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f421ca9f26055e6a0800000000000000
+      internalID: -6420637307720953265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_40
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656f315b2f6525b60800000000000000
+      internalID: 7733339110568621654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_41
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5867a86bf59d9080800000000000000
+      internalID: -9179015558486071205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_42
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2bffcb0785c7c40800000000000000
+      internalID: 5511377285225100029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_43
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9438f2d0c3b13c80800000000000000
+      internalID: -8344690993786243941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_44
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153f7c88721ef9830800000000000000
+      internalID: 4080227347335738193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_45
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc707ee8bbc84ad30800000000000000
+      internalID: 4441829869678430157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_46
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f03677de4c5a2a0800000000000000
+      internalID: -6726753944218693742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_47
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946ed7b52e3099940800000000000000
+      internalID: 5303274306937939529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_48
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb687702415098630800000000000000
+      internalID: 3929677733859657407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Piskel - 2023-01-08T120516.620 (23) (1) (1) (5) (1) (2) (2)_49
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df7c474fd05e4b20800000000000000
+      internalID: 3120520511718457298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

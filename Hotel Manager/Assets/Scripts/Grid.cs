@@ -42,13 +42,13 @@ public class Grid
         List<Vector4> list = new List<Vector4>();
         for (int i = 0; i < width; i++)
         {
-            list.Add(new Vector4(i, 1,6, 0));
-            list.Add(new Vector4(i, 2,2, 0));
-            list.Add(new Vector4(i, 3,2, 0));
-            list.Add(new Vector4(i, 4,3, 0));
-            list.Add(new Vector4(i, 5,2, 0));
-            list.Add(new Vector4(i, 6,2, 0));
-            list.Add(new Vector4(i, 7, 6, 0));
+            list.Add(new Vector4(i, 1,4, 0));
+            list.Add(new Vector4(i, 2,5, 0));
+            list.Add(new Vector4(i, 3,5, 0));
+            list.Add(new Vector4(i, 4,6, 0));
+            list.Add(new Vector4(i, 5,5, 0));
+            list.Add(new Vector4(i, 6,5, 0));
+            list.Add(new Vector4(i, 7,4, 0));
             for (int j = 0; j < 8; j++)
             {
                 gridArray[i, j].canBuild = false; 
@@ -147,7 +147,6 @@ public class Grid
             return;
         }
     }
-
     private bool[] GetNeighbours(int x,int y)
     {
         bool[] neighbours = new bool[4];
@@ -158,7 +157,6 @@ public class Grid
 
         return neighbours;
     }
-
     private void SetWallSprite(int x,int y,int id)
     {
         bool[] neighbours = GetNeighbours(x, y);
@@ -173,7 +171,7 @@ public class Grid
 
         if(number == 0)
         {
-            list.Add(new Vector4(x, y, 3, 0));
+            list.Add(new Vector4(x, y, 3, id));
         }
         else if (number == 1)
         {
@@ -211,7 +209,6 @@ public class Grid
             wallGrid.ChangeSprites(list,false);
         }
     }
-
     private Vector4 SetWallSprite2(int x, int y)
     {
         bool[] neighbours = GetNeighbours(x, y);
@@ -259,6 +256,24 @@ public class Grid
         return new Vector4(-1, -1, -1, -1);
     }
 
+    public void RemoveWall(int x, int y)
+    {
+        if (x >= 0 && y >= 0 && x < width && y < height)
+        {
+            if (gridWalls[x, y].isWall)
+            {
+                gridWalls[x, y].isWall = false;
+                gridWalls[x, y].wallID = -1;
+                gridArray[x, y].canMove = true;
+                SetWallSprite(x, y, -1);
+                wallGrid.Clear(x, y);
+            }
+        }
+        else
+        {
+            return;
+        }
+    }
 
 }
 

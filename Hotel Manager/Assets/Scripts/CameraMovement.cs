@@ -73,12 +73,6 @@ public class CameraMovement : MonoBehaviour
             transform.position = (Vector2)transform.position + (startPosition - (Vector2)GetMousePosition());
         }
 
-
-
-
-
-
-
         x = Mathf.Clamp(x  + transform.position.x, min.x, max.x);
         y = Mathf.Clamp(y + transform.position.y, min.y, max.y);
         transform.position = new Vector3(x, y, -60f);

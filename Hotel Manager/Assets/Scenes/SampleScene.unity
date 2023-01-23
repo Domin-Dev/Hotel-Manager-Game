@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 87750633}
   - component: {fileID: 87750632}
   m_Layer: 5
-  m_Name: Button (7)
+  m_Name: doorButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.07153038, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.54509807, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -989,7 +989,7 @@ MonoBehaviour:
     m_Left: 19
     m_Right: 0
     m_Top: 0
-    m_Bottom: 0
+    m_Bottom: 30
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
@@ -1336,12 +1336,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 89406126601090916, guid: 31264953b4951ec498e390948122346c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 89406126601090916, guid: 31264953b4951ec498e390948122346c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 89406126601090916, guid: 31264953b4951ec498e390948122346c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 688245a4396f0ca48babe802065ee472, type: 3}
+      objectReference: {fileID: 755056312354484437, guid: 71eebeb3c74cce741a3aaf2d2a6e1edd, type: 3}
     - target: {fileID: 89406126601090918, guid: 31264953b4951ec498e390948122346c, type: 3}
       propertyPath: m_Name
       value: Body
+      objectReference: {fileID: 0}
+    - target: {fileID: 89406126601090918, guid: 31264953b4951ec498e390948122346c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31264953b4951ec498e390948122346c, type: 3}
@@ -1491,8 +1503,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c0afe7d82bc3b34380f2bbb7a2351e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 80c0f5b9b52d6a44a9a49c5dd1a9d99e, type: 3}
   cell: {fileID: 6473642807659745209, guid: 07073407defd56846aa503c85f6a3b8b, type: 3}
-  wallsTransform: {fileID: 323757859}
+  listTransform: {fileID: 323757859}
+  wallButton: {fileID: 2050085475}
+  floorButton: {fileID: 1772903185}
+  doorButton: {fileID: 87750632}
   walls:
   - {fileID: 11400000, guid: 4c2b46a3e6169fd46bf690fab36974b8, type: 2}
   - {fileID: 11400000, guid: 83aa1017c1644a040a1745fc1a3dcbb6, type: 2}
@@ -1518,6 +1534,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 89483e4aaef662043b3303e285974e0d, type: 2}
   - {fileID: 11400000, guid: 2c7cb50126362034ebd93609422eee0c, type: 2}
   - {fileID: 11400000, guid: fa82000bda0cd0045aea1afeb693c0e4, type: 2}
+  - {fileID: 11400000, guid: 34df1f488a0efc04dbe90b5c335731e7, type: 2}
+  floors:
+  - {fileID: 11400000, guid: baefb605dfa46f84ea09dc0da6c20335, type: 2}
+  - {fileID: 11400000, guid: ad2c607d8d297724f9edb93d83690db9, type: 2}
+  - {fileID: 11400000, guid: 29be388a9081cc547a073d5d1e641c82, type: 2}
 --- !u!1 &640905897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,7 +1820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.07153038, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.54509807, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1996,7 +2017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.07153038, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.54509807, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3112,7 +3133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.07153038, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.54509807, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3472,7 +3493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.07153038, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.54509807, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3602,7 +3623,7 @@ GameObject:
   - component: {fileID: 1772903186}
   - component: {fileID: 1772903185}
   m_Layer: 5
-  m_Name: Button (6)
+  m_Name: floorButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4156,7 +4177,7 @@ GameObject:
   - component: {fileID: 2050085476}
   - component: {fileID: 2050085475}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: wallButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
