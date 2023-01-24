@@ -5,8 +5,6 @@ using UnityEngine;
 public class GridMesh
 {
 
-    const int x = 128;
-    const int y = 0;
 
     const float ws = 32;
     const float hs = 32f;
@@ -55,10 +53,11 @@ public class GridMesh
                 }
 
 
-                uv[index * 4 + 0] = PixelsToUV(x + (x / 32 * 2), y + hs);
-                uv[index * 4 + 1] = PixelsToUV(x + ws, y + hs);
-                uv[index * 4 + 2] = PixelsToUV(x + (x / 32 * 2), y + 1);
-                uv[index * 4 + 3] = PixelsToUV(x + ws, y + 1);
+                uv[index * 4 + 0] = PixelsToUV(1 , 1 + hs);
+                uv[index * 4 + 1] = PixelsToUV(1 + ws, 1 + hs);
+                uv[index * 4 + 2] = PixelsToUV(1 , 1);
+                uv[index * 4 + 3] = PixelsToUV(1 + ws,  1);
+
 
 
                 triangles[index * 6 + 0] = index * 4 + 0;

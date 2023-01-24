@@ -147,6 +147,7 @@ public class Grid
             return;
         }
     }
+
     private bool[] GetNeighbours(int x,int y)
     {
         bool[] neighbours = new bool[4];
@@ -157,6 +158,7 @@ public class Grid
 
         return neighbours;
     }
+
     private void SetWallSprite(int x,int y,int id)
     {
         bool[] neighbours = GetNeighbours(x, y);
@@ -209,6 +211,7 @@ public class Grid
             wallGrid.ChangeSprites(list,false);
         }
     }
+
     private Vector4 SetWallSprite2(int x, int y)
     {
         bool[] neighbours = GetNeighbours(x, y);

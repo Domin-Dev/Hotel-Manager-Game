@@ -10,4 +10,5 @@ public class BuildingElement: ScriptableObject
     public string name;
     public Sprite image;
     public int price;
+    public UIManager.FloorTag floorTag;
 }

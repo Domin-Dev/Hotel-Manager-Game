@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71e923a950508db4585239f261afb22e, type: 3}
-  m_Name: 0
+  m_Name: 4
   m_EditorClassIdentifier: 
-  Id: 6
-  name: fdfdfd
-  image: {fileID: 7254352916724677197, guid: 433d76122e8826e4c80c20035dfa6f6a, type: 3}
-  price: 10
+  Id: 4
+  name: 
+  image: {fileID: 2714096290157913419, guid: 433d76122e8826e4c80c20035dfa6f6a, type: 3}
+  price: 555
+  floorTag: 2
