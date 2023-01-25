@@ -5,9 +5,11 @@ using UnityEngine;
 public class MapCell 
 {
     public bool isWall;
-    public int wallID;
+    public int ID;
+    public int floorID;
     public MapCell()
     {
-        wallID = -1;
+        floorID = 0;
+        ID = -1;
     }
 }

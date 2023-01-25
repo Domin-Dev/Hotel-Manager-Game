@@ -16,4 +16,4 @@ MonoBehaviour:
   name: 4554
   image: {fileID: -5154864246085000941, guid: 433d76122e8826e4c80c20035dfa6f6a, type: 3}
   price: 10
-  floorTag: 2
+  Tags: 01000000

@@ -72,7 +72,7 @@ public class GridManager : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
-                text.text = text.text = 0 + " x " + 0 + "\n" + 0 + " $";
+                text.text = text.text = 0 + " x " + 0 + "\n" + "$" + 0;
                 foreach (Vector4 item in list)
                 {
 
@@ -156,7 +156,7 @@ public class GridManager : MonoBehaviour
 
 
 
-                    text.text = width + " x " + height + "\n" + (cost - ignoredCost).ToString() + " $";
+                    text.text = width + " x " + height + "\n" + "$"+ (cost - ignoredCost).ToString();
                     grid.iconGrid.ChangeSprites(list, false);
                 }
 
@@ -180,7 +180,8 @@ public class GridManager : MonoBehaviour
                 {
                     Vector3 vector3 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     grid.GetXY(vector3, out int x, out int y);
-                    startPosition = new Vector2Int(x, y);
+                    if(x >= 0 && x < grid.width && y > 7 && y < grid.height) startPosition = new Vector2Int(x, y);
+                    else startPosition = new Vector2Int(-1, -1);
                 }
                 else
                 {
@@ -190,11 +191,15 @@ public class GridManager : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
-                text.text = text.text = 0 + " x " + 0 + "\n" + 0 + " $";
-                   
+                text.text = text.text = 0 + " x " + 0 + "\n"+ "$" + 0;
+
                 for (int i = 0; i < list.Count; i++)
                 {
-                    list[i] = new Vector4(list[i].x, list[i].y, id, 0);
+                    Vector4 vector4 = list[i];
+                    list[i] = new Vector4(vector4.x, vector4.y, id, 0);
+         
+                    grid.ChangeFloor(id,(int)vector4.x,(int)vector4.y);
+
                 }
 
                 grid.floorGrid.ChangeSprites(list,true);
@@ -239,27 +244,48 @@ public class GridManager : MonoBehaviour
                         }
                     }
 
-                    int cost;
+                    int vx = 0;
+                    int vy = 0;
+                    int number = 0;
+
+                    if (width < 1)
+                    {
+                        vx = -1;
+                        width = Mathf.Abs(width) + 2;
+                    }
+                    else
+                    {
+                        vx = 1;
+                    }
+
+                    if (height < 1)
+                    {
+                        vy = -1;
+                        height = Mathf.Abs(height) + 2;
+                    }
+                    else
+                    {
+                        vy = 1;
+                    }
 
                     for (int i = 0; i < Mathf.Abs(width); i++)
                     {
                         for (int j = 0; j < Mathf.Abs(height); j++)
                         {
-                            if(width >= 0) list.Add(new Vector4(startPosition.x + i, startPosition.y + j, 0, 0));
-                            else list.Add(new Vector4(startPosition.x - i -2, startPosition.y + j , 0, 0));
+                            int px = startPosition.x + i * vx;
+                            int py = startPosition.y + j * vy;
+                            if(!grid.CheckFloor(id,px,py))
+                            {
+                                number++;
+                                list.Add(new Vector4(px,py, 3, 0));
+                            }
+                            else
+                            {
+                                list.Add(new Vector4(px, py, 0, 0));
+                            }
                         }
                     }
-
-                    if (isLine)
-                    {
-                        cost = width * height * price;
-                    }
-                    else
-                    {
-                        cost = (width * 2 + height * 2 - 4) * price;
-                    }
-
-                    text.text = width + " x " + height + "\n" + (cost - ignoredCost).ToString() + " $";
+                    text.text = Mathf.Abs(width) + " x " + Mathf.Abs(height) + "\n" + "$"+ Mathf.Abs(width * height - number).ToString();
                     grid.iconGrid.ChangeSprites(list, false);
                 }
             }

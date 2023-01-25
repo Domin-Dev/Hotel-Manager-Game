@@ -138,7 +138,7 @@ public class Grid
         if (x >= 0 && y >= 0 && x < width && y < height)
         {
             gridWalls[x, y].isWall = true;
-            gridWalls[x, y].wallID = id;
+            gridWalls[x, y].ID = id;
             gridArray[x, y].canMove = false;
             SetWallSprite(x,y,id);
         }
@@ -216,7 +216,7 @@ public class Grid
     {
         bool[] neighbours = GetNeighbours(x, y);
         int number = 0;
-        int id = gridWalls[x, y].wallID;
+        int id = gridWalls[x, y].ID;
 
         for (int i = 0; i < 4; i++)
         {
@@ -259,6 +259,21 @@ public class Grid
         return new Vector4(-1, -1, -1, -1);
     }
 
+    public bool CheckFloor(int id,int x,int y)
+    {
+        if (x >= 0 && y >= 0 && x < width && y < height)
+        {
+            if (id == gridWalls[x, y].floorID)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    public void ChangeFloor(int id,int x,int y)
+    {
+        gridWalls[x, y].floorID = id;
+    }
     public void RemoveWall(int x, int y)
     {
         if (x >= 0 && y >= 0 && x < width && y < height)
@@ -266,7 +281,7 @@ public class Grid
             if (gridWalls[x, y].isWall)
             {
                 gridWalls[x, y].isWall = false;
-                gridWalls[x, y].wallID = -1;
+                gridWalls[x, y].ID = -1;
                 gridArray[x, y].canMove = true;
                 SetWallSprite(x, y, -1);
                 wallGrid.Clear(x, y);

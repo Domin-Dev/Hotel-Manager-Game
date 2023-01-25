@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
         {
             DontDestroyOnLoad(this);
             instance = this;
-            gameGrid = new Grid(100, 150, 3f, Vector3.zero - new Vector3(30,0,0), material,material1,material2);
+            gameGrid = new Grid(100, 120, 3f, Vector3.zero - new Vector3(30,0,0), material,material1,material2);
             gameObject.AddComponent<GridManager>();
         }
         else

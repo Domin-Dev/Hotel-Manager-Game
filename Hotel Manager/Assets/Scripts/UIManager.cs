@@ -107,7 +107,7 @@ public class UIManager : MonoBehaviour
         {
             GameObject gObject;
 
-            if(floorTag == FloorTag.none || floorTag == obj.floorTag)
+            if(floorTag == FloorTag.none || CheckTag(obj.Tags,floorTag))
             {
                 if (index >= childCount) gObject = Instantiate(cell, listTransform);
                 else
@@ -133,6 +133,15 @@ public class UIManager : MonoBehaviour
             }
         }
         
+    }
+
+    private bool CheckTag(List<FloorTag> tags, FloorTag floorTag)
+    {
+        foreach (FloorTag item in tags)
+        {
+            if (item == floorTag) return true;
+        }
+        return false;
     }
 
     private void ClearList()
