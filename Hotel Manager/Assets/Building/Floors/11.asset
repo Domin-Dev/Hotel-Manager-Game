@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e923a950508db4585239f261afb22e, type: 3}
   m_Name: 11
   m_EditorClassIdentifier: 
-  Id: 28
+  Id: 11
   name: 
-  image: {fileID: 6047036548193005190, guid: 433d76122e8826e4c80c20035dfa6f6a, type: 3}
+  image: {fileID: 0}
   price: 555
-  floorTag: 1
+  Tags: 00000000

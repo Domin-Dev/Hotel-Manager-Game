@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 9
   name: 
-  image: {fileID: 2177576181518277688, guid: 433d76122e8826e4c80c20035dfa6f6a, type: 3}
+  image: {fileID: 0}
   price: 555
-  floorTag: 1
+  Tags: 00000000

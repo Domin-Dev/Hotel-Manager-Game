@@ -8,7 +8,7 @@ public class BuildingElement: ScriptableObject
 {  
     public int Id;
     public string name;
-    public Sprite image;
+    [HideInInspector]  public Sprite image;
     public int price;
     public List<UIManager.FloorTag> Tags = new List<UIManager.FloorTag>();
     BuildingElement()

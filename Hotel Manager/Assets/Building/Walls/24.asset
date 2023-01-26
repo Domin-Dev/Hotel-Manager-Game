@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e923a950508db4585239f261afb22e, type: 3}
   m_Name: 24
   m_EditorClassIdentifier: 
-  wallId: 0
+  Id: 24
   name: Normal Wall
-  Image: {fileID: 2471580033004403237, guid: cff2285487565354eb17191548c9a20d, type: 3}
+  image: {fileID: 0}
   price: 100
+  Tags: 00000000
