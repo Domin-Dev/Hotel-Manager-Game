@@ -1706,6 +1706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b18a8e26b694046b880852ef877d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionSprite: {fileID: 7860432071736043332, guid: 0a144fd90d1b18e43aed2e840d5f9d38, type: 3}
   spriteMaterial: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   material: {fileID: 2100000, guid: 0b07525ec93ed5d47a032b98a34b2304, type: 2}
   material1: {fileID: 2100000, guid: 5d8e5bb5924796c4ab51f96b9670972c, type: 2}
@@ -1913,6 +1914,7 @@ MonoBehaviour:
   doors:
   - {fileID: 11400000, guid: 9e50cf256fdd8f241968bb3df3ccfc13, type: 2}
   - {fileID: 11400000, guid: 8069c82e942f9e04eb50cf185f452450, type: 2}
+  - {fileID: 11400000, guid: fdd9a2b8127294c47a11464f033e0179, type: 2}
 --- !u!1 &640905897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3689,7 +3691,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 1971523439020630931, guid: 31e3d1cf2b3a34841baeeef0e96717f9, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1764706, g: 0.47058827, b: 0.18431373, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

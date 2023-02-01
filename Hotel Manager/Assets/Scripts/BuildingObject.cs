@@ -10,6 +10,7 @@ public class BuildingObject : ScriptableObject
     public List<Sprite> images = new List<Sprite>();
     public int price;
     public List<UIManager.ObjectTag> Tags = new List<UIManager.ObjectTag>();
+    public List<Vector2> interactionSites = new List<Vector2>();
     BuildingObject()
     {
         Tags.Add(UIManager.ObjectTag.none);

@@ -21,3 +21,7 @@ MonoBehaviour:
   - {fileID: -6138004288622599259, guid: 5b1002f19fa8bce49af900af89fdd579, type: 3}
   price: 0
   Tags: 00000000
+  interactionSites:
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
+  - {x: 1, y: 2}
