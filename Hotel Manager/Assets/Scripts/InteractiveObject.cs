@@ -14,4 +14,9 @@ public class InteractiveObject : MonoBehaviour
         this.y = y;
         this.ID = ID;
     }
+
+    public void Remove()
+    {
+        Destroy(this.gameObject);
+    }
 }

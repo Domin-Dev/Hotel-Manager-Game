@@ -297,7 +297,25 @@ public class Grid
     {
         if (x >= 0 && y >= 0 && x < width && y < height)
         {
+            if(obj is Door)
+            {
+                gridArray[x, y].isDoor = true;
+            }
+
             gridWalls[x, y].interactiveObject = obj;
+        }
+    }
+    public void RemoveObject(int x,int y)
+    {
+        if (x >= 0 && y >= 0 && x < width && y < height)
+        {
+            InteractiveObject interactiveObject = GetMapCell(x, y).interactiveObject;
+            if (interactiveObject is Door)
+            {
+                gridArray[x, y].isDoor = false;
+            }
+
+            interactiveObject.Remove();
         }
     }
 
@@ -313,6 +331,12 @@ public class Grid
         }
     }
 
+    public MapCell GetMapCell(Vector2 vector2)
+    {
+        GetXY(vector2, out int x, out int y);
+        return GetMapCell(x, y);
+    }
+
     public bool CheckBuild(int x , int y)
     {
         if (x >= 0 && y >= 0 && x < width && y < height)
@@ -325,5 +349,32 @@ public class Grid
         }
 
     }
+
+    public bool[,] GetDoorsArray()
+    {
+        bool[,] doorsArray = new bool[width,height];
+        for (int i = 0; i < height; i++)
+        {
+            for (int j = 0; j < width; j++)
+            {
+                doorsArray[j, i] = gridArray[j, i].isDoor;
+            }
+        }
+        return doorsArray;
+    }
+
+    public bool CheckObject(int x,int y)
+    {
+        if (x >= 0 && y >= 0 && x < width && y < height)
+        {
+            return gridWalls[x, y].interactiveObject != null;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+
 }
 

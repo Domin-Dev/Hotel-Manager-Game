@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 89406126601090916}
   - component: {fileID: 6613347964124862397}
   - component: {fileID: 1311821289}
+  - component: {fileID: -6915212217154109665}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 4848681292987723016, guid: 111ccaa87fd380a44ac2c0c26db6240a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -99,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2d406bd20dec0438f3af097c806f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  path: []
 --- !u!95 &1311821289
 Animator:
   serializedVersion: 3
@@ -118,6 +120,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!210 &-6915212217154109665
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89406126601090918}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
 --- !u!1 &89406126636018267
 GameObject:
   m_ObjectHideFlags: 0

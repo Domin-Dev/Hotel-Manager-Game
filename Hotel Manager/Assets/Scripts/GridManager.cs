@@ -57,7 +57,6 @@ public class GridManager : MonoBehaviour
         this.id = id;
         this.price = price;
     }
-
     private void Update()
     {
         text.transform.position = Input.mousePosition;
@@ -82,7 +81,6 @@ public class GridManager : MonoBehaviour
         }
 
     }
-
     private void DrawLine(bool isPositive,Vector2Int position,int end,bool isX)
     {
         int k;
@@ -394,110 +392,119 @@ public class GridManager : MonoBehaviour
     }
     private void BuildObject()
     {
-        text.gameObject.SetActive(true);
-        text.text = "$" + price;
-
-        Vector3 vector3 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        grid.GetXY(vector3, out int x, out int y);
-
-        if (shadowObject == null)
+        if (Input.GetMouseButton(1))
         {
-            shadowObject = new GameObject("Object " + id, typeof(SpriteRenderer));
-            shadowObject.transform.localScale = new Vector3(3, 3, 1);
-
-            shadowObject.transform.position = grid.GetPosition(x, y);
-            shadowObject.GetComponent<SpriteRenderer>().sprite = uIManager.doors[id].images[rotationIndex];
-            shadowObject.GetComponent<SpriteRenderer>().material = material;
-            shadowObject.GetComponent<SpriteRenderer>().color = Color.green;
-        }
-        else
-        {
-            shadowObject.SetActive(true);
-            shadowObject.transform.position = grid.GetPosition(x, y);
-            shadowObject.GetComponent<SpriteRenderer>().sprite = uIManager.doors[id].images[rotationIndex];
-        }
-
-        Vector3 rotation = new Vector3(1, 1, 0);
-        switch (rotationIndex)
-        {
-            case 0:
-                rotation = new Vector3(1, 1, 0);
-                break;
-            case 1:
-                rotation = new Vector3(1, -1, 0);
-                break;
-            case 2:
-                rotation = new Vector3(-1, -1, 0);
-                break;
-            case 3:
-                rotation = new Vector3(-1, 1, 0);
-                break;
-        }
-
-       
-
-        for (int i = 0; i < uIManager.doors[id].interactionSites.Count; i++)
-        {
-            Vector3 position = (Vector3)uIManager.doors[id].interactionSites[i] * grid.cellSize;
-            if (rotationIndex == 1 || rotationIndex == 3)
-            {
-                 position = new Vector3(position.y, position.x, 0);
-            }
-
-
-            if (listInteraction.Count - 1 < i)
-            {
-                GameObject gObject;
-                gObject = new GameObject("Interaction " + id, typeof(SpriteRenderer));
-                gObject.transform.localScale = new Vector3(3, 3, 1);
-                gObject.transform.position = grid.GetPosition(x, y) + new Vector3(position.x * rotation.x, position.y * rotation.y, 0);
-                gObject.GetComponent<SpriteRenderer>().sprite = interactionSprite;
-                gObject.GetComponent<SpriteRenderer>().material = material;
-                listInteraction.Add(gObject);
-            }
-            else
-            {
-                GameObject gObject = listInteraction[i];
-                gObject.SetActive(true);
-                gObject.transform.position = grid.GetPosition(x, y) + new Vector3(position.x * rotation.x, position.y * rotation.y, 0);
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            if (rotationIndex == 3)
-            {
-                rotationIndex = 0;
-            }
-            else
-            {
-                rotationIndex++;
-            }
-        }     
-
-        if(Input.GetMouseButton(1))
-        {
-            
             isSelected = IsSelected.none;
             uIManager.SwitchOff();
         }
+        Vector3 vector3 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        grid.GetXY(vector3, out int x, out int y);
 
-
-        if (Input.GetMouseButton(0) && !CameraMovement.mouseIsOverUI() && grid.CheckBuild(x,y))
+        if (id == -1)
         {
-            Type type = TypesOfInteractiveObjects.GetTypeInteractiveObjects(uIManager.doors[id].typeOfIO);
-            GameObject obj = new GameObject("Object " + id, typeof(SpriteRenderer), type);
-            obj.transform.localScale = new Vector3(3, 3, 1);
-            obj.transform.position = grid.GetPosition(x, y);
-            obj.transform.parent = Objects;
-            obj.GetComponent<Door>().SetValue(x, y, id);
-            grid.SetObject(x,y,(InteractiveObject) obj.GetComponent(type));         
+            text.gameObject.SetActive(false);
+            
 
-            obj.GetComponent<SpriteRenderer>().sprite = uIManager.doors[id].images[rotationIndex];
-            obj.GetComponent<SpriteRenderer>().material = material;
+            if (Input.GetMouseButton(0) && !CameraMovement.mouseIsOverUI() && grid.CheckObject(x,y))
+            {
+                grid.RemoveObject(x, y);
+            }
+        }
+        else
+        {
+            text.gameObject.SetActive(true);
+            text.text = "$" + price;
+
+            if (shadowObject == null)
+            {
+                shadowObject = new GameObject("Object " + id, typeof(SpriteRenderer));
+                shadowObject.transform.localScale = new Vector3(3, 3, 1);
+
+                shadowObject.transform.position = grid.GetPosition(x, y);
+                shadowObject.GetComponent<SpriteRenderer>().sprite = uIManager.doors[id].images[rotationIndex];
+                shadowObject.GetComponent<SpriteRenderer>().material = material;
+                shadowObject.GetComponent<SpriteRenderer>().color = Color.white;
+                shadowObject.GetComponent<SpriteRenderer>().sortingOrder = 10;
+            }
+            else
+            {
+                shadowObject.SetActive(true);
+                shadowObject.transform.position = grid.GetPosition(x, y);
+                shadowObject.GetComponent<SpriteRenderer>().sprite = uIManager.doors[id].images[rotationIndex];
+            }
+
+            Vector3 rotation = new Vector3(1, 1, 0);
+            switch (rotationIndex)
+            {
+                case 0:
+                    rotation = new Vector3(1, 1, 0);
+                    break;
+                case 1:
+                    rotation = new Vector3(1, -1, 0);
+                    break;
+                case 2:
+                    rotation = new Vector3(-1, -1, 0);
+                    break;
+                case 3:
+                    rotation = new Vector3(-1, 1, 0);
+                    break;
+            }
+
+            for (int i = 0; i < uIManager.doors[id].interactionSites.Count; i++)
+            {
+                Vector3 position = (Vector3)uIManager.doors[id].interactionSites[i] * grid.cellSize;
+                if (rotationIndex == 1 || rotationIndex == 3)
+                {
+                    position = new Vector3(position.y, position.x, 0);
+                }
+
+
+                if (listInteraction.Count - 1 < i)
+                {
+                    GameObject gObject;
+                    gObject = new GameObject("Interaction " + id, typeof(SpriteRenderer));
+                    gObject.transform.localScale = new Vector3(3, 3, 1);
+                    gObject.transform.position = grid.GetPosition(x, y) + new Vector3(position.x * rotation.x, position.y * rotation.y, 0);
+                    gObject.GetComponent<SpriteRenderer>().sprite = interactionSprite;
+                    gObject.GetComponent<SpriteRenderer>().material = material;
+                    listInteraction.Add(gObject);
+                }
+                else
+                {
+                    GameObject gObject = listInteraction[i];
+                    gObject.SetActive(true);
+                    gObject.transform.position = grid.GetPosition(x, y) + new Vector3(position.x * rotation.x, position.y * rotation.y, 0);
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                if (rotationIndex == 3)
+                {
+                    rotationIndex = 0;
+                }
+                else
+                {
+                    rotationIndex++;
+                }
+            }
+
+            if (Input.GetMouseButton(0) && !CameraMovement.mouseIsOverUI() && grid.CheckBuild(x, y))
+            {
+                Type type = TypesOfInteractiveObjects.GetTypeInteractiveObjects(uIManager.doors[id].typeOfIO);
+                GameObject obj = new GameObject("Object " + id, typeof(SpriteRenderer), type);
+                obj.transform.localScale = new Vector3(3, 3, 1);
+                obj.transform.position = grid.GetPosition(x, y);
+                obj.transform.parent = Objects;
+                obj.GetComponent<Door>().SetValue(x, y, id);
+                grid.SetObject(x, y, (InteractiveObject)obj.GetComponent(type));
+
+                obj.GetComponent<SpriteRenderer>().sprite = uIManager.doors[id].images[rotationIndex];
+                obj.GetComponent<SpriteRenderer>().material = material;
+
+            }
         }
     }
-
     private void ClearShadows()
     {
        
