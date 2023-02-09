@@ -28,7 +28,6 @@ public class UIManager : MonoBehaviour
    [SerializeField] List<BuildingElement> floors = new List<BuildingElement>();
    [SerializeField] public List<BuildingObject> doors = new List<BuildingObject>();
 
-
     public enum FloorTag
     {
         none,
@@ -39,13 +38,9 @@ public class UIManager : MonoBehaviour
     public enum ObjectTag
     {
         none,
-        floor,
-        ground,
+        Door,
+        Desk,
     }
-
-
-
-
     private void Start()
     {
         foreach (BuildingElement item in floors)

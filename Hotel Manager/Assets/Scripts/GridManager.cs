@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System;
 public class GridManager : MonoBehaviour
 {
+
     private Grid grid;
     private UIManager uIManager;
     private Material material;
@@ -14,7 +15,8 @@ public class GridManager : MonoBehaviour
     int id;
     int price;
 
-   public int rotationIndex = 0;
+    Transform Objects;
+    public int rotationIndex = 0;
     GameObject shadowObject;
     List<GameObject> listInteraction = new List<GameObject>();
 
@@ -31,6 +33,7 @@ public class GridManager : MonoBehaviour
         floor,
         door,
     }
+
     Vector2Int startPosition;
     Vector2Int endPosition;
     Text text;
@@ -46,6 +49,7 @@ public class GridManager : MonoBehaviour
 
     private void Start()
     {
+        Objects = new GameObject("Objects").transform;
         uIManager = GameManager.instance.gameObject.GetComponent<UIManager>();
     }
     public void SetStats(int id,int price)
@@ -90,7 +94,7 @@ public class GridManager : MonoBehaviour
         {
             for (int i = 0; i < end; i++)
             {
-                if (grid.GetValue(position.x + i * k, position.y + i * (1 - k)).canBuild)
+                if (grid.GetMapCell(position.x + i * k, position.y + i * (1 - k)).canBuild)
                 {
                     if(id == -1)
                     {
@@ -115,7 +119,7 @@ public class GridManager : MonoBehaviour
         {
             for (int i = 0; i < end; i++)
             {
-                if (grid.GetValue(position.x - i * k, position.y - i * (1 - k)).canBuild)
+                if (grid.GetMapCell(position.x - i * k, position.y - i * (1 - k)).canBuild)
                 {
                     if (id == -1)
                     {
@@ -207,7 +211,7 @@ public class GridManager : MonoBehaviour
 
                 if (endPosition == startPosition)
                 {
-                    if (grid.GetValue(startPosition.x, startPosition.y).canBuild && grid.GetValue(startPosition.x, startPosition.y).canMove)
+                    if (grid.GetMapCell(startPosition.x, startPosition.y).canBuild)
                     {
                         list.Add(new Vector4(startPosition.x, startPosition.y, 1, 0));
                     }
@@ -332,7 +336,7 @@ public class GridManager : MonoBehaviour
 
                 if (endPosition == startPosition)
                 {
-                    if (grid.GetValue(startPosition.x, startPosition.y).canBuild)
+                    if (grid.GetMapCell(startPosition.x, startPosition.y).canBuild)
                     {
                         list.Add(new Vector4(startPosition.x, startPosition.y, 1, 0));
                     }
@@ -446,9 +450,6 @@ public class GridManager : MonoBehaviour
                 GameObject gObject;
                 gObject = new GameObject("Interaction " + id, typeof(SpriteRenderer));
                 gObject.transform.localScale = new Vector3(3, 3, 1);
-
-
-
                 gObject.transform.position = grid.GetPosition(x, y) + new Vector3(position.x * rotation.x, position.y * rotation.y, 0);
                 gObject.GetComponent<SpriteRenderer>().sprite = interactionSprite;
                 gObject.GetComponent<SpriteRenderer>().material = material;
@@ -476,16 +477,22 @@ public class GridManager : MonoBehaviour
 
         if(Input.GetMouseButton(1))
         {
+            
             isSelected = IsSelected.none;
             uIManager.SwitchOff();
         }
 
 
-        if (Input.GetMouseButton(0) && !CameraMovement.mouseIsOverUI())
+        if (Input.GetMouseButton(0) && !CameraMovement.mouseIsOverUI() && grid.CheckBuild(x,y))
         {
-            GameObject obj = new GameObject("Object " + id, typeof(SpriteRenderer));
+            Type type = TypesOfInteractiveObjects.GetTypeInteractiveObjects(uIManager.doors[id].typeOfIO);
+            GameObject obj = new GameObject("Object " + id, typeof(SpriteRenderer), type);
             obj.transform.localScale = new Vector3(3, 3, 1);
             obj.transform.position = grid.GetPosition(x, y);
+            obj.transform.parent = Objects;
+            obj.GetComponent<Door>().SetValue(x, y, id);
+            grid.SetObject(x,y,(InteractiveObject) obj.GetComponent(type));         
+
             obj.GetComponent<SpriteRenderer>().sprite = uIManager.doors[id].images[rotationIndex];
             obj.GetComponent<SpriteRenderer>().material = material;
         }

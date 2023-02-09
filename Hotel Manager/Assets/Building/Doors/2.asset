@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1
   name: 
+  price: 0
+  typeOfIO: 0
   images:
   - {fileID: 2515247837090963649, guid: ecead143b0837ec428771956f0d68961, type: 3}
   - {fileID: -7763605562430190120, guid: ecead143b0837ec428771956f0d68961, type: 3}
   - {fileID: -6192706948837733138, guid: ecead143b0837ec428771956f0d68961, type: 3}
   - {fileID: 7317554049902305667, guid: ecead143b0837ec428771956f0d68961, type: 3}
-  price: 0
-  Tags: 00000000
+  Tags: 0000000000000000
   interactionSites:
   - {x: 0, y: 1}
   - {x: 0, y: 2}

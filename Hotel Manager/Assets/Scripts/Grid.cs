@@ -30,7 +30,7 @@ public class Grid
         {
             for (int j = 0; j < gridArray.GetLength(1); j++)
             {
-                gridArray[i, j] = new PathNode { x = i, y = j, canMove = true,canBuild = true};
+                gridArray[i, j] = new PathNode { x = i, y = j, canMove = true};
                 gridWalls[i, j] = new MapCell();
             }
         }
@@ -51,7 +51,7 @@ public class Grid
             list.Add(new Vector4(i, 7,4, 0));
             for (int j = 0; j < 8; j++)
             {
-                gridArray[i, j].canBuild = false; 
+                gridWalls[i, j].canBuild = false; 
             }
         }
         floorGrid.ChangeSprites(list,true);
@@ -293,5 +293,37 @@ public class Grid
         }
     }
 
+    public void SetObject(int x,int y,InteractiveObject obj)
+    {
+        if (x >= 0 && y >= 0 && x < width && y < height)
+        {
+            gridWalls[x, y].interactiveObject = obj;
+        }
+    }
+
+    public MapCell GetMapCell(int x,int y)
+    {
+        if (x >= 0 && y >= 0 && x < width && y < height)
+        {
+            return gridWalls[x, y];
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public bool CheckBuild(int x , int y)
+    {
+        if (x >= 0 && y >= 0 && x < width && y < height)
+        {
+            return gridWalls[x, y].CanBuild();
+        }
+        else
+        {
+            return false;
+        }
+
+    }
 }
 

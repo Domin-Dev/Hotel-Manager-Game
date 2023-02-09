@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    
     [SerializeField] public Sprite interactionSprite;
     [SerializeField] public Material spriteMaterial;
     [SerializeField] Material material;

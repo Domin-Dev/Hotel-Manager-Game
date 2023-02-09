@@ -9,13 +9,14 @@ public struct PathNode
     public int index;
     public int comeFromIndex;
     public bool canMove;
-    public bool canBuild;
+    public bool isDoor;
+
+
+
 
     public int fCost;
     public int gCost;
     public int hCost;
-
-    
 
     public void CalculateF()
     {
