@@ -37,7 +37,6 @@ public class Pathfinding : MonoBehaviour
                     count++;
                 }
 
-                Debug.Log(count);
             }
         }
 

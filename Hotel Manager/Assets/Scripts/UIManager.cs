@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-using UnityEngine.Sprites;
 
 public class UIManager : MonoBehaviour
 {
+   [SerializeField] Transform colorPalette;
+
+
    [SerializeField] Texture2D wallTexture;
    [SerializeField] Texture2D floorTexture;
 
@@ -43,6 +45,20 @@ public class UIManager : MonoBehaviour
     }
     private void Start()
     {
+        Transform colorTransform = colorPalette.GetChild(0);
+        Debug.Log(colorTransform.name);
+
+        for (int i = 0; i < colorTransform.childCount; i++)
+        {
+            Color color = colorTransform.GetChild(i).GetComponent<Image>().color;
+            colorTransform.GetChild(i).GetComponent<Button>().onClick.AddListener(() =>
+            {                
+                SetColor(color);
+            });
+        }   
+
+
+
         foreach (BuildingElement item in floors)
         {
             Rect rect = new Rect(1 + item.Id * 34, 1, 32, 32);
@@ -58,6 +74,7 @@ public class UIManager : MonoBehaviour
 
         wallButton.onClick.AddListener(() =>
         {
+            colorPalette.gameObject.SetActive(false);
             GameManager.instance.gridManager.isSelected = GridManager.IsSelected.none;
             LoadList(walls, GridManager.IsSelected.wall, FloorTag.none);
             dropdown.options = new List<Dropdown.OptionData>();
@@ -70,6 +87,7 @@ public class UIManager : MonoBehaviour
 
         floorButton.onClick.AddListener(() =>
         {
+            colorPalette.gameObject.SetActive(false);
             GameManager.instance.gridManager.isSelected = GridManager.IsSelected.none;
             LoadList(floors, GridManager.IsSelected.floor, FloorTag.none);
             List<Dropdown.OptionData> options = new List<Dropdown.OptionData>() { new Dropdown.OptionData("everything") };
@@ -96,6 +114,7 @@ public class UIManager : MonoBehaviour
 
         doorButton.onClick.AddListener(() =>
         {
+            colorPalette.gameObject.SetActive(false);
             GameManager.instance.gridManager.isSelected = GridManager.IsSelected.none;
             LoadList(doors, GridManager.IsSelected.door, ObjectTag.none);
             dropdown.options = new List<Dropdown.OptionData>();
@@ -131,6 +150,7 @@ public class UIManager : MonoBehaviour
             }
             gObject1.transform.GetChild(1).GetComponent<Image>().sprite = sprite;
             gObject1.transform.GetChild(0).GetComponent<Text>().text = "demolish";
+            gObject1.GetComponent<Button>().onClick.RemoveAllListeners();
             gObject1.GetComponent<Button>().onClick.AddListener(() =>
             {
                 GameManager.instance.gridManager.SetStats(-1, 0);
@@ -158,6 +178,7 @@ public class UIManager : MonoBehaviour
                 }
                 gObject.transform.GetChild(1).GetComponent<Image>().sprite = obj.image;
                 gObject.transform.GetChild(0).GetComponent<Text>().text = obj.name + "\n<color=#20E600> " + obj.price + "</color>";
+                gObject.GetComponent<Button>().onClick.RemoveAllListeners();
                 gObject.GetComponent<Button>().onClick.AddListener(() =>
                 {
                     GameManager.instance.gridManager.SetStats(obj.Id, obj.price);
@@ -192,8 +213,10 @@ public class UIManager : MonoBehaviour
             }
             gObject1.transform.GetChild(1).GetComponent<Image>().sprite = sprite;
             gObject1.transform.GetChild(0).GetComponent<Text>().text = "demolish";
+            gObject1.GetComponent<Button>().onClick.RemoveAllListeners();
             gObject1.GetComponent<Button>().onClick.AddListener(() =>
             {
+                colorPalette.gameObject.SetActive(false);
                 GameManager.instance.gridManager.SetStats(-1, 0);
                 for (int i = 0; i < listTransform.transform.childCount; i++)
                 {
@@ -219,8 +242,10 @@ public class UIManager : MonoBehaviour
                 }
                 gObject.transform.GetChild(1).GetComponent<Image>().sprite = obj.images[0];
                 gObject.transform.GetChild(0).GetComponent<Text>().text = obj.name + "\n<color=#20E600> " + obj.price + "</color>";
+                gObject.GetComponent<Button>().onClick.RemoveAllListeners();
                 gObject.GetComponent<Button>().onClick.AddListener(() =>
                 {
+                    colorPalette.gameObject.SetActive(true);
                     GameManager.instance.gridManager.SetStats(obj.Id, obj.price);
                     for (int i = 0; i < listTransform.transform.childCount; i++)
                     {
@@ -272,12 +297,17 @@ public class UIManager : MonoBehaviour
 
     public void SwitchOff()
     {
+        colorPalette.gameObject.SetActive(false);
         for (int i = 0; i < listTransform.transform.childCount; i++)
         {
             listTransform.transform.GetChild(i).GetComponent<Image>().color = orange;
         }     
     }
 
+    public void SetColor(Color color)
+    {
+        GameManager.instance.gridManager.SetColor(color);
+    }
 
 
 }

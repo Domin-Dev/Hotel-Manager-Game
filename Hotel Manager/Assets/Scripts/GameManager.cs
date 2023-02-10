@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    
+
+    [SerializeField] public Shader shader;
     [SerializeField] public Sprite interactionSprite;
     [SerializeField] public Material spriteMaterial;
     [SerializeField] Material material;

@@ -7,6 +7,6 @@ public class ColorPalette : MonoBehaviour
 {
 
     float currentH, currentS, currentV;
-    [SerializeField] Image 
+
 
 }

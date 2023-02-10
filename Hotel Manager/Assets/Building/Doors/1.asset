@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 0
   name: 
-  images:
-  - {fileID: 4198773028377060457, guid: 19427bf9b62568343b07d7f60f5ffd05, type: 3}
-  - {fileID: -725546487880037859, guid: 19427bf9b62568343b07d7f60f5ffd05, type: 3}
-  - {fileID: 7493912053963933357, guid: 19427bf9b62568343b07d7f60f5ffd05, type: 3}
-  - {fileID: -4621441903273646991, guid: 19427bf9b62568343b07d7f60f5ffd05, type: 3}
   price: 0
+  typeOfIO: 0
+  images:
+  - {fileID: -420222539153294148, guid: 78f68fa86ec7d794db1a551a9d44befa, type: 3}
+  - {fileID: 7537748498418365757, guid: 78f68fa86ec7d794db1a551a9d44befa, type: 3}
+  - {fileID: -7654251868973111032, guid: 78f68fa86ec7d794db1a551a9d44befa, type: 3}
+  - {fileID: -7527919943087842052, guid: 78f68fa86ec7d794db1a551a9d44befa, type: 3}
   Tags: 00000000
   interactionSites:
   - {x: 0, y: 1}

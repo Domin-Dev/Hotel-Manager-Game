@@ -12,6 +12,7 @@ public class GridManager : MonoBehaviour
     private Sprite interactionSprite;
 
 
+    Color color;
     int id;
     int price;
 
@@ -37,14 +38,18 @@ public class GridManager : MonoBehaviour
     Vector2Int startPosition;
     Vector2Int endPosition;
     Text text;
+    Shader shader;
+
 
     List<Vector4> list = new List<Vector4>();
     public GridManager()
     {
+        shader = GameManager.instance.shader;
         text = GameManager.instance.text;
         grid = GameManager.instance.gameGrid;
         material = GameManager.instance.spriteMaterial;
         interactionSprite = GameManager.instance.interactionSprite;
+        color = Color.white;
     }
 
     private void Start()
@@ -56,6 +61,12 @@ public class GridManager : MonoBehaviour
     {
         this.id = id;
         this.price = price;
+    }
+
+    public void SetColor(Color color)
+    {
+        this.color = color;
+        if (shadowObject != null) shadowObject.GetComponent<SpriteRenderer>().material.SetColor("color1", color);
     }
     private void Update()
     {
@@ -92,7 +103,7 @@ public class GridManager : MonoBehaviour
         {
             for (int i = 0; i < end; i++)
             {
-                if (grid.GetMapCell(position.x + i * k, position.y + i * (1 - k)).canBuild)
+                if (grid.GetMapCell(position.x + i * k, position.y + i * (1 - k)).CanBuild())
                 {
                     if(id == -1)
                     {
@@ -105,7 +116,7 @@ public class GridManager : MonoBehaviour
                             list.Add(new Vector4(position.x + i * k, position.y + i * (1 - k), 0, 0));
                         }
                     }
-                    else
+                    else 
                     {
 
                         list.Add(new Vector4(position.x + i * k, position.y + i * (1 - k), 0, 0));
@@ -117,7 +128,7 @@ public class GridManager : MonoBehaviour
         {
             for (int i = 0; i < end; i++)
             {
-                if (grid.GetMapCell(position.x - i * k, position.y - i * (1 - k)).canBuild)
+                if (grid.GetMapCell(position.x - i * k, position.y - i * (1 - k)).CanBuild())
                 {
                     if (id == -1)
                     {
@@ -209,7 +220,7 @@ public class GridManager : MonoBehaviour
 
                 if (endPosition == startPosition)
                 {
-                    if (grid.GetMapCell(startPosition.x, startPosition.y).canBuild)
+                    if (grid.GetMapCell(startPosition.x, startPosition.y).CanBuild())
                     {
                         list.Add(new Vector4(startPosition.x, startPosition.y, 1, 0));
                     }
@@ -393,7 +404,7 @@ public class GridManager : MonoBehaviour
     private void BuildObject()
     {
         if (Input.GetMouseButton(1))
-        {
+        {                  
             isSelected = IsSelected.none;
             uIManager.SwitchOff();
         }
@@ -422,7 +433,9 @@ public class GridManager : MonoBehaviour
 
                 shadowObject.transform.position = grid.GetPosition(x, y);
                 shadowObject.GetComponent<SpriteRenderer>().sprite = uIManager.doors[id].images[rotationIndex];
-                shadowObject.GetComponent<SpriteRenderer>().material = material;
+                Material material =  new Material(shader);
+                material.SetColor("color1", color);
+                shadowObject.GetComponent<SpriteRenderer>().material = material; 
                 shadowObject.GetComponent<SpriteRenderer>().color = Color.white;
                 shadowObject.GetComponent<SpriteRenderer>().sortingOrder = 10;
             }
@@ -492,6 +505,7 @@ public class GridManager : MonoBehaviour
             if (Input.GetMouseButton(0) && !CameraMovement.mouseIsOverUI() && grid.CheckBuild(x, y))
             {
                 Type type = TypesOfInteractiveObjects.GetTypeInteractiveObjects(uIManager.doors[id].typeOfIO);
+                grid.RemoveWall(x, y);
                 GameObject obj = new GameObject("Object " + id, typeof(SpriteRenderer), type);
                 obj.transform.localScale = new Vector3(3, 3, 1);
                 obj.transform.position = grid.GetPosition(x, y);
@@ -500,6 +514,8 @@ public class GridManager : MonoBehaviour
                 grid.SetObject(x, y, (InteractiveObject)obj.GetComponent(type));
 
                 obj.GetComponent<SpriteRenderer>().sprite = uIManager.doors[id].images[rotationIndex];
+                Material material = new Material(shader);
+                material.SetColor("color1", color);
                 obj.GetComponent<SpriteRenderer>().material = material;
 
             }
@@ -516,6 +532,7 @@ public class GridManager : MonoBehaviour
         }
 
     }
+
 }
     
 

@@ -11,13 +11,13 @@ public class Door : InteractiveObject
     }
     public void Open()
     {
-        spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+        spriteRenderer.material.SetInt("open", 1);
         stoper = 1f;
     }
     
     private void Close()
     {
-        spriteRenderer.color = new Color(1, 1, 1, 1f);
+        spriteRenderer.material.SetFloat("open", 0);
     }
 
 
