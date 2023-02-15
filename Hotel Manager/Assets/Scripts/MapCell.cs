@@ -6,7 +6,7 @@ public class MapCell
 {
 
     public bool isWall;
-    public int ID;
+    public int wallID;
     public int floorID;
     public InteractiveObject interactiveObject;
     public bool canBuild;
@@ -15,11 +15,22 @@ public class MapCell
     {
         canBuild = true;
         floorID = 0;
-        ID = -1;
+        wallID = -1;
     }
 
-    public bool CanBuild()
+    public bool CanBuildObj(bool isDoor)
     {        
-        return canBuild && interactiveObject == null;
+        if(isDoor)
+        {
+            return canBuild && interactiveObject == null;
+        }else
+        {
+            return canBuild && !isWall && interactiveObject == null;
+        }
+
+    }
+    public bool CanBuildWall(int id)
+    {
+        return canBuild && id != wallID && interactiveObject == null;
     }
 }

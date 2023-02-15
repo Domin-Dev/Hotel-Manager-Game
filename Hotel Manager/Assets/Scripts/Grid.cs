@@ -138,7 +138,7 @@ public class Grid
         if (x >= 0 && y >= 0 && x < width && y < height)
         {
             gridWalls[x, y].isWall = true;
-            gridWalls[x, y].ID = id;
+            gridWalls[x, y].wallID = id;
             gridArray[x, y].canMove = false;
             SetWallSprite(x,y,id);
         }
@@ -216,7 +216,7 @@ public class Grid
     {
         bool[] neighbours = GetNeighbours(x, y);
         int number = 0;
-        int id = gridWalls[x, y].ID;
+        int id = gridWalls[x, y].wallID;
 
         for (int i = 0; i < 4; i++)
         {
@@ -281,7 +281,7 @@ public class Grid
             if (gridWalls[x, y].isWall)
             {
                 gridWalls[x, y].isWall = false;
-                gridWalls[x, y].ID = -1;
+                gridWalls[x, y].wallID = -1;
                 gridArray[x, y].canMove = true;
                 SetWallSprite(x, y, -1);
                 wallGrid.Clear(x, y);
@@ -337,11 +337,11 @@ public class Grid
         return GetMapCell(x, y);
     }
 
-    public bool CheckBuild(int x , int y)
+    public bool CheckBuildObj(int x , int y, bool isDoor)
     {
         if (x >= 0 && y >= 0 && x < width && y < height)
         {
-            return gridWalls[x, y].CanBuild();
+            return gridWalls[x, y].CanBuildObj(isDoor);
         }
         else
         {

@@ -103,7 +103,7 @@ public class GridManager : MonoBehaviour
         {
             for (int i = 0; i < end; i++)
             {
-                if (grid.GetMapCell(position.x + i * k, position.y + i * (1 - k)).CanBuild())
+                if (grid.GetMapCell(position.x + i * k, position.y + i * (1 - k)).CanBuildWall(id))
                 {
                     if(id == -1)
                     {
@@ -122,13 +122,19 @@ public class GridManager : MonoBehaviour
                         list.Add(new Vector4(position.x + i * k, position.y + i * (1 - k), 0, 0));
                     }
                 }
+                else
+                {
+                    if (i == 0 || i == end - 1) costSkipped += 0.5f * price;
+                    else if (isLine) costSkipped += 0.5f * price;
+                    else costSkipped += price;
+                }
             }
         }
         else
         {
             for (int i = 0; i < end; i++)
             {
-                if (grid.GetMapCell(position.x - i * k, position.y - i * (1 - k)).CanBuild())
+                if (grid.GetMapCell(position.x - i * k, position.y - i * (1 - k)).CanBuildWall(id))
                 {
                     if (id == -1)
                     {
@@ -147,11 +153,18 @@ public class GridManager : MonoBehaviour
                         list.Add(new Vector4(position.x - i * k, position.y - i * (1 - k), 0, 0));
                     }
 
+                }else
+                {
+                    if (i == 0 || i == end - 1) costSkipped += 0.5f * price;
+                    else if (isLine) costSkipped += 0.5f * price;
+                    else costSkipped += price;
                 }
+
             }
         }
 
     }
+    float costSkipped;
     private void BuildWall()
     {
         text.gameObject.SetActive(true);
@@ -212,6 +225,9 @@ public class GridManager : MonoBehaviour
                 grid.iconGrid.Clear(list);
                 list.Clear();
                 endPosition = new Vector2Int(x, y);
+                costSkipped = 0;
+
+
 
                 int width = Mathf.Abs(endPosition.x - startPosition.x) + 1;
                 int height = Mathf.Abs(endPosition.y - startPosition.y) + 1;
@@ -220,7 +236,7 @@ public class GridManager : MonoBehaviour
 
                 if (endPosition == startPosition)
                 {
-                    if (grid.GetMapCell(startPosition.x, startPosition.y).CanBuild())
+                    if (grid.GetMapCell(startPosition.x, startPosition.y).CanBuildObj(isSelected == IsSelected.door))
                     {
                         list.Add(new Vector4(startPosition.x, startPosition.y, 1, 0));
                     }
@@ -254,13 +270,15 @@ public class GridManager : MonoBehaviour
 
                 int cost;
 
+                        
+
                 if (isLine)
                 {
-                    cost = width * height * price;
+                    cost = width * height * price - Mathf.RoundToInt(costSkipped);
                 }
                 else
                 {
-                    cost = (width * 2 + height * 2 - 4) * price;
+                    cost = (width * 2 + height * 2 - 4) * price - Mathf.RoundToInt(costSkipped);
                 }
 
 
@@ -502,7 +520,7 @@ public class GridManager : MonoBehaviour
                 }
             }
 
-            if (Input.GetMouseButton(0) && !CameraMovement.mouseIsOverUI() && grid.CheckBuild(x, y))
+            if (Input.GetMouseButton(0) && !CameraMovement.mouseIsOverUI() && grid.CheckBuildObj(x, y,isSelected == IsSelected.door))
             {
                 Type type = TypesOfInteractiveObjects.GetTypeInteractiveObjects(uIManager.doors[id].typeOfIO);
                 grid.RemoveWall(x, y);

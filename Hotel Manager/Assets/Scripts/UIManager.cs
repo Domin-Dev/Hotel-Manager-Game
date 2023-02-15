@@ -30,6 +30,7 @@ public class UIManager : MonoBehaviour
    [SerializeField] List<BuildingElement> floors = new List<BuildingElement>();
    [SerializeField] public List<BuildingObject> doors = new List<BuildingObject>();
 
+
     public enum FloorTag
     {
         none,
@@ -43,6 +44,8 @@ public class UIManager : MonoBehaviour
         Door,
         Desk,
     }
+
+    Shader shader;
     private void Start()
     {
         Transform colorTransform = colorPalette.GetChild(0);
